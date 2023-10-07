@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainscreen_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/main_grid"
+        android:layout_weight="1"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></ListView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:gravity="center"
+            android:id="@+id/main_todo_searchview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></androidx.appcompat.widget.SearchView>
+
+        <ImageView
+            android:id="@+id/main_setting_btn"
+            android:src="@drawable/setting"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"></ImageView>
+
+
+
+        <Button
+            android:gravity="center"
+            android:id="@+id/main_addbtn"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:onClick="main_todo_btn"
+            android:textSize="25dp"
+            android:layout_gravity="right"
+            android:text="+ Add"
+            android:layout_width="0dp"
+            android:layout_height="50dp"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

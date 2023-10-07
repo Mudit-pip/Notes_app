@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".splashscreenActivity">
+    
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/animation_notes"></com.airbnb.lottie.LottieAnimationView>
+
+
+    <TextView
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:id="@+id/splashscreen_txt"
+        android:gravity="center"
+        android:textColor="#55c9d7"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:text="- Made by Mudit Choudhary"
+        android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
